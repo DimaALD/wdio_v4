@@ -1,0 +1,38 @@
+{
+  "name": "wdio_v4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc --build --clean && tsc && wdio ./configs/wdio.conf.js",
+    "allure:report": "allure generate ./reports/allure-results --clean && allure open",
+    "clean_node_modules": "rd /s node_modules",
+    "rebuild": "npm run clean_node_modules & npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimaALD/wdio_v4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DimaALD/wdio_v4/issues"
+  },
+  "homepage": "https://github.com/DimaALD/wdio_v4#readme",
+  "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.32",
+    "@types/webdriverio": "^4.4.0",
+    "allure-commandline": "^2.13.0",
+    "chai": "4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "7.1.1",
+    "typescript": "^3.4.3",
+    "wdio-allure-reporter": "^0.8.3",
+    "wdio-mocha-framework": "^0.6.4",
+    "wdio-selenium-standalone-service": "0.0.12",
+    "wdio-spec-reporter": "^0.1.5",
+    "webdriverio": "4.14.4"
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "data": {
+        "MAP_BOX": "https://www.mapbox.com/",
+        "SIGN_IN": "https://account.mapbox.com/auth/signin/",
+        "ACCOUNT": "https://account.mapbox.com/"
+    }
+}
